@@ -27,5 +27,10 @@ public class BedAndBreakfast implements Bookable{
     public boolean hasCapacity(){
         return customers == null;
     }
+
+    public int countCustomers(){
+        return customers.size();
+    }
+
 }
 
