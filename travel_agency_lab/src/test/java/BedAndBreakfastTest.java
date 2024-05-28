@@ -8,7 +8,6 @@ public class BedAndBreakfastTest {
     BedAndBreakfast bedAndBreakfast;
     Customer customer;
 
-<<<<<<< HEAD
     @BeforeEach
     public void setUp(){
         bedAndBreakfast = new BedAndBreakfast(150);
@@ -38,14 +37,3 @@ public class BedAndBreakfastTest {
     }
 
 }
-=======
-
-    @BeforeEach
-    public void setUp() {
-        bedAndBreakfast = new BedAndBreakfast();
-        customer = new Customer();
-
-    }
-
-}
->>>>>>> 4983304a8b3ce222508afd3e6b92ef6979615de0
