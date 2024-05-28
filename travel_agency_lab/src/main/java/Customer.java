@@ -11,7 +11,6 @@ public class Customer {
         this.wallet = wallet;
     }
 
-
     //PayMethod
 
     public double pay(double amount){
@@ -32,7 +31,6 @@ public class Customer {
         }
 
     }
-
 
 
 //Getters and Setters
