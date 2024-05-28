@@ -20,6 +20,7 @@ public class BedAndBreakfastTest {
         assertThat(bedAndBreakfast.hasCapacity()).isEqualTo(false);
     }
 
+
     @Test
     public void canCancel(){
         bedAndBreakfast.cancel((customer));
@@ -31,9 +32,19 @@ public class BedAndBreakfastTest {
         assertThat(bedAndBreakfast.price()).isEqualTo(150);
     }
 
+
     @Test
-    public void hasCapacityAlwaysTrue(){
+    public void hasNoCapacity(){
+        bedAndBreakfast.book(customer);
+        assertThat(bedAndBreakfast.hasCapacity()).isEqualTo(false);
+    }
+
+    @Test
+    public void hasCapacity(){
         assertThat(bedAndBreakfast.hasCapacity()).isEqualTo(true);
     }
+
+
+
 
 }

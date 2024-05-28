@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class BedAndBreakfast implements Bookable{
 
     private double price;
