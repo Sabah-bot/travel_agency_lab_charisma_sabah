@@ -3,21 +3,21 @@ import java.util.ArrayList;
 public class BedAndBreakfast implements Bookable{
 
     private double price;
-    private ArrayList<Customer> customers;
+    private Customer customer;
 
-    public BedAndBreakfast(){
+    public BedAndBreakfast(double price){
         this.price = price;
-        this.customers = new ArrayList<>();
+        this.customer = null;
     }
 
     public void book(Customer customer){
         if( customer.canAfford(price)){
-            customers.add(customer);
+            this.customer = customer;
         }
     }
 
     public void cancel(Customer customer){
-        customers.remove(customer);
+        this.customer = null;
     }
 
     public double price(){
@@ -25,7 +25,19 @@ public class BedAndBreakfast implements Bookable{
     }
 
     public boolean hasCapacity(){
-        return customers == null;
+        if(this.customer == null){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
+    //test these
+
+
+
+//    public int countCustomers(){
+//        return customers.size();
+//    }
 }
 
