@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 public class Customer {
 
     private String name;
@@ -10,7 +8,6 @@ public class Customer {
         this.name = name;
         this.wallet = wallet;
     }
-
 
     //PayMethod
 
@@ -32,14 +29,11 @@ public class Customer {
         }
 
     }
-
-
 //Getters and Setters
 
     public void setName(){
         this.name = name;
     }
-
 
     public String getName(){
         return name;
@@ -48,7 +42,6 @@ public class Customer {
     public void setWallet(){
         this.wallet = wallet;
     }
-
 
     public double getWallet(){
         return wallet;

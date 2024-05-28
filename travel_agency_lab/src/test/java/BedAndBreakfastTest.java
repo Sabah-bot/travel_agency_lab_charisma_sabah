@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class BedAndBreakfastTest {
@@ -20,7 +19,6 @@ public class BedAndBreakfastTest {
         assertThat(bedAndBreakfast.hasCapacity()).isEqualTo(false);
     }
 
-
     @Test
     public void canCancel(){
         bedAndBreakfast.cancel((customer));
@@ -32,7 +30,6 @@ public class BedAndBreakfastTest {
         assertThat(bedAndBreakfast.price()).isEqualTo(150);
     }
 
-
     @Test
     public void hasNoCapacity(){
         bedAndBreakfast.book(customer);
@@ -43,8 +40,6 @@ public class BedAndBreakfastTest {
     public void hasCapacity(){
         assertThat(bedAndBreakfast.hasCapacity()).isEqualTo(true);
     }
-
-
 
 
 }

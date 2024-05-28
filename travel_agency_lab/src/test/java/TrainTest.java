@@ -19,14 +19,12 @@ public class TrainTest {
         assertThat(train.countCustomers()).isEqualTo(1);
     }
 
-
     @Test
     public void cannotBook(){
         customer = new Customer("John", 0);
         train.book(customer);
         assertThat(train.countCustomers()).isEqualTo(0);
     }
-
 
     @Test
     public void canCancel(){
@@ -51,8 +49,6 @@ public class TrainTest {
         train = new Train (50, 0);
         assertThat(train.hasCapacity()).isEqualTo(false);
     }
-
-
 
 //    @Test
 //    public void checkCustomerCount(){

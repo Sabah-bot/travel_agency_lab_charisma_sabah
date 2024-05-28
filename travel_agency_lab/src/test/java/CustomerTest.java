@@ -5,15 +5,10 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class CustomerTest {
 
     Customer customer;
-
-
-    //customer
-
     @BeforeEach
     public void setUp(){
         customer = new Customer("Mario", 10_000);
     }
-
 
     @Test
     public void setName(){
@@ -21,27 +16,21 @@ public class CustomerTest {
         assertThat(customer.getName()).isEqualTo("Emma");
     }
 
-
     @Test
     public void getName(){
         assertThat(customer.getName()).isEqualTo("Mario");
     }
 
-
     @Test
     public void setWallet(){
         customer = new Customer("John", 1000);
         assertThat(customer.getWallet()).isEqualTo(1000);
-
     }
 
     @Test
     public void getWallet(){
        assertThat(customer.getWallet()).isEqualTo(10_000);
     }
-
-
-    //pay Test
 
     @Test
     public void canPay(){

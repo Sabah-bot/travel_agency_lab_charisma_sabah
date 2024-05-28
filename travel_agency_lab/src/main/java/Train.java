@@ -16,15 +16,11 @@ public class Train implements Bookable {
         if (customer.canAfford(price) && hasCapacity()){
             customers.add(customer);
         }
-        else {
-            System.out.println("Cannot book");
-        }
     }
 
     public void cancel(Customer customer){
         customers.remove(customer);
     }
-
 
     public double price(){
         return price;
