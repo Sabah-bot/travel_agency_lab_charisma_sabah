@@ -32,6 +32,7 @@ public class BedAndBreakfast implements Bookable{
             return false;
         }
     }
+<<<<<<< HEAD
     //test these
 
 
@@ -39,5 +40,12 @@ public class BedAndBreakfast implements Bookable{
 //    public int countCustomers(){
 //        return customers.size();
 //    }
+=======
+
+    public int countCustomers(){
+        return customers.size();
+    }
+
+>>>>>>> 4983304a8b3ce222508afd3e6b92ef6979615de0
 }
 

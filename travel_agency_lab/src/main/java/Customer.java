@@ -11,6 +11,7 @@ public class Customer {
         this.wallet = wallet;
     }
 
+
     //PayMethod
 
     public double pay(double amount){
